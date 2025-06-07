@@ -233,6 +233,9 @@ Command:
 python eval_point_track.py agent=point_policy suite=point_policy dataloader=point_policy eval=true suite.use_robot_points=true suite.use_object_points=true experiment=eval_point_policy suite/task/franka_env=<task_name> bc_weight=path/to/bc/weight suite.predict_force=true
 ```
 
+
+Detailed command arguments can be found in the [Command Line Argument Table](#Command-Line-Argument-Table).
+
 ## Command Line Argument Table
 Tables below provide references for setting the correct command-line arguments during different stages (Preprocessing, Training, Inference) for both Human and Robot Teleop demonstrations.  
 Settings vary depending on the gripper type (FTF, Binary Gripper, or Continuous Gripper) and demo source.

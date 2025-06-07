@@ -27,7 +27,7 @@
 Instructions for Set up are based on [Franka-Teach](https://github.com/NYU-robot-learning/Franka-Teach).
 Instructions for Data Collection and Data preprocessing are based on [Point Policy](https://github.com/siddhanthaldar/Point-Policy/tree/main/instructions). 
 
-## Setup
+🚩## Setup
 
 1. Start the deoxys control process on the NUC
 SSH into the NUC. You can check drivers with `tmux ls`. To attach to them:

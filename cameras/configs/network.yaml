@@ -1,0 +1,5 @@
+host_address: 'localhost'
+
+# Camera offsets
+cam_port_offset:  10005
+

@@ -1,0 +1,10 @@
+defaults:
+  - _self_
+  - camera
+
+storage_path: "path/to/data/extracted_data/task_name"
+demo_num: 0
+collect_img: True
+collect_depth: False
+collect_state: True
+collect_reskin: True

@@ -1,0 +1,41 @@
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled 
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+
+cam_info:
+  -
+    cam_id: 1
+    cam_serial_num: "147322072736"
+    type: realsense
+  -
+    cam_id: 2
+    cam_serial_num: "028522071213"
+    type: realsense
+  # -
+  #   cam_id: 3
+  #   cam_serial_num: "147322072546"
+  #   type: realsense
+  # -
+  #   cam_id: 4
+  #   cam_serial_num: "152222073516"
+  #   type: realsense
+
+cam_config:
+  realsense:
+    width: 640
+    height: 480
+    fps: 30
+    processing_preset: 1
+    depth: False
+  fisheye:
+    width: 640
+    height: 480
+    fps: 30
+
+num_cams: 4

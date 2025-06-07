@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+
+task_name: 0325_pick_bread
+object_labels: [objects]
+num_object_points: 7

@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+
+task_name: 0417_pick_bread_on_plate_teleop
+object_labels: [objects]
+num_object_points: 10

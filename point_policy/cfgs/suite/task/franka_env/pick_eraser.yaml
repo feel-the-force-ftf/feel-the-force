@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+
+task_name: 0304_pick_eraser
+object_labels: [objects]
+num_object_points: 6

@@ -1,0 +1,6 @@
+defaults:
+  - _self_
+
+task_name: 0314a_pick_bread_noForce
+object_labels: [objects]
+num_object_points: 7

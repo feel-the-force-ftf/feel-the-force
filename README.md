@@ -36,7 +36,7 @@ tmux attach -t franka_arm
 tmux attach -t franka_gripper
 ```
 
-  to restart drivers, start two separate tmux sessions—one for the arm, one for the gripper:
+To restart drivers, start two separate tmux sessions—one for the arm, one for the gripper:
 
 ```bash
 # Arm control (left or right)

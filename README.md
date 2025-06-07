@@ -150,6 +150,8 @@ Retart `collect_data.py` script after each demonstration.
     - This will generate the calib file in `point_policy/calib/calib.npy`.
       
 1. Convert data format
+
+   
 Go to the robot utils Franka directory.
 ```
 cd point-policy/robot_utils/franka

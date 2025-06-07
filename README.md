@@ -196,7 +196,7 @@ The process is slightly different from processing human demonstrations (no need 
 ## Training
 
 1. In `cfg/config.yaml`, set `root_dir`  to `path/to/repo` and `data_dir` to `path/to/data/expert_demos`. All commands must be run from inside the `point-policy` directory.
-TODO: Remove dates in task names
+
 
 2. Create yaml file (eg. `0414_clip_chip.yaml`) under `path/to/point_policy/cfgs/suite/task/franka_env`. The file should contain the following content:
 ```bash

@@ -112,7 +112,7 @@ To view the camera feeds:
 ```bash
 bash launch_camera_app.sh
 ```
-and type `http://172.24.71.211:5000` in your internet browser search bar.
+Then type `http://172.24.71.211:5000` in your internet browser search bar.
 
 After launching these, you may test that the Franka environment works with `python eval.py`, which should breakpoint in `outer_step()` before the force controller loop.
 
@@ -125,6 +125,7 @@ After launching these, you may test that the Franka environment works with `pyth
 python3 teleop.py teleop_mode=<human/robot>
 ```
 You can also specify parameters in `path/to/Franka-Teach/configs/teleop.yaml` file.
+
 Keep this script running. If it outputs `Assertion error`, you need to terminal data collection and restart the script.
 
 2. Start data collection by running the `collect_data.py` script. Set the `demo_num` to the number of demonstrations you want to collect and `collect_reskin` to `True` if you want to collect ReSkin tactile data.
@@ -135,6 +136,7 @@ python3 collect_data.py demo_num=0 collect_reskin=<True/False>
 You can also specify parameters in `path/to/Franka-Teach/configs/collect_data.yaml` file.
 
 When collecting either human or robot data, use the VR controller to start and stop the data collection while performing the actions.
+
 Retart `collect_data.py` script after each demonstration.
 
 ## Data Preprocessing
@@ -187,6 +189,7 @@ You can check robot points labeling with `python save_videos.py`. Remember to se
 6. Processing robot demonstrations
    
 If you are using robot demonstrations (e.g., collected via teleoperation), follow these steps:
+
 The process is slightly different from processing human demonstrations (no need to run convert_pkl_human_to_robot.py) :
 ```
 1. process_data_robot.py        

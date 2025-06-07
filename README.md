@@ -182,7 +182,7 @@ NOTE:
 python convert_pkl_human_to_robot.py --data_dir path/to/data --calib_path path/to/calib_file --task_name <task_name> --smooth_robot_tracks 
 ```
 
-You can check robot points labeling with `python save_videos.py`. Remeber to set DATA_DIR and TASK_NAME in the script.
+You can check robot points labeling with `python save_videos.py`. Remember to set DATA_DIR and TASK_NAME in the script.
 
 6. Processing robot demonstrations 
 If you are using robot demonstrations (e.g., collected via teleoperation), follow these steps:

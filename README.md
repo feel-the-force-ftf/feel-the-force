@@ -231,6 +231,7 @@ Command:
 python eval_point_track.py agent=point_policy suite=point_policy dataloader=point_policy eval=true suite.use_robot_points=true suite.use_object_points=true experiment=eval_point_policy suite/task/franka_env=<task_name> bc_weight=path/to/bc/weight suite.predict_force=true
 ```
 
+To replay a demo trajectory (open-loop evaluation), add  `replay_demo=true`. You can choose which demo index to replay by modifying the index inside the replay_demo function in the script. Remember to change `suite/task/franka_env` to the task you want to check.
 
 Detailed command arguments can be found in the [Command Line Argument Table](#Command-Line-Argument-Table).
 
@@ -243,7 +244,7 @@ Refer to this table before launching training or inference to ensure correct con
 
 | Stage        | FTF                                                                 | Binary Gripper                                                        | Continuous Gripper                                                      |
 |--------------|----------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Preprocessing |                                                                      |                                                                        | when you run `convert_to_pkl_human_to_robot` with `--continuous_gripper` |
+| Preprocessing |                                                                      |                                                                        | run `convert_to_pkl_human_to_robot.py` with `--continuous_gripper` |
 | Training     | `suite=point_policy`  <br> `suite.subsample=3` <br> `suite.mask_force=false` | `suite=point_policy`  <br> `suite.subsample=3` <br> `suite.mask_force=false` | `suite=point_policy` <br> `suite.subsample=3`                            |
 | Inference    | `suite=point_policy` <br> `suite.variable_desired_force=true` <br> `suite.force_match_tolerance=?` <br> `suite.force_controller=true` <br> `suite.continuous_gripper=false` | `suite=point_policy` <br> `suite.continuous_gripper=false`              | `suite=point_policy` <br> `suite.continuous_gripper=true`                |
 

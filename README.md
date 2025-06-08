@@ -231,7 +231,11 @@ Command:
 python eval_point_track.py agent=point_policy suite=point_policy dataloader=point_policy eval=true suite.use_robot_points=true suite.use_object_points=true experiment=eval_point_policy suite/task/franka_env=<task_name> bc_weight=path/to/bc/weight suite.predict_force=true
 ```
 
-To replay a demo trajectory (open-loop evaluation), add  `replay_demo=true`. You can choose which demo index to replay by modifying the index inside the replay_demo function in the script. Remember to change `suite/task/franka_env` to the task you want to check.
+To replay a demo robot points trajectory (open-loop evaluation), add  `replay_demo=true`. By default, the script replays the first demo in the dataset:
+```
+first_demo = dataset_pkl['observations'][0]
+```
+Do not forget to set suite/task/franka_env to the correct task name in the command.
 
 Detailed command arguments can be found in the [Command Line Argument Table](#Command-Line-Argument-Table).
 

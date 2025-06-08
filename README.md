@@ -24,8 +24,8 @@
 - [Inference](#Inference)
 - [Command Line Argument Table](#Command-Line-Argument-Table)
 
-Instructions for Set up are based on [Franka-Teach](https://github.com/NYU-robot-learning/Franka-Teach).
-Instructions for Data Collection and Data preprocessing are based on [Point Policy](https://github.com/siddhanthaldar/Point-Policy/tree/main/instructions). 
+Instructions for Setup are based on [Franka-Teach](https://github.com/NYU-robot-learning/Franka-Teach).
+Instructions for Data Collection and Data Preprocessing are based on [Point Policy](https://github.com/siddhanthaldar/Point-Policy/tree/main/instructions). 
 
 ## Setup
 

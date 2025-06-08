@@ -188,7 +188,7 @@ You can check robot points labeling with `python save_videos.py`. Remember to se
 
 6. Processing robot demonstrations
    
-If you are using robot demonstrations (e.g., collected via teleoperation), follow these steps:
+If you are processing robot demonstrations (e.g., collected via teleoperation), follow these steps:
 
 The process is slightly different from processing human demonstrations (no need to run convert_pkl_human_to_robot.py) :
 ```

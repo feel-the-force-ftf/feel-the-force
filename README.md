@@ -137,7 +137,7 @@ You can also specify parameters in `path/to/Franka-Teach/configs/collect_data.ya
 
 When collecting either human or robot data, use the VR controller to start and stop the data collection while performing the actions.
 
-Retart `collect_data.py` script after each demonstration.
+Restart `collect_data.py` script after each demonstration.
 
 ## Data Preprocessing
 

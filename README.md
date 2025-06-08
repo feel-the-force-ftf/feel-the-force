@@ -209,7 +209,7 @@ defaults:
 
 task_name: 0414_clip_chip
 object_labels: [objects]
-num_object_points: 7
+num_object_points: 7 # number of points you use to label objects in label_points.ipynb
 ```
 
 3. Training

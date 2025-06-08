@@ -91,7 +91,7 @@ cd /path/to/Franka-Teach/
 python3 reskin.py  # in a different terminal
 ```
 Make sure the ReSkin device is properly connected via USB. 
-In `path/to/Franka-Teach/configs/reskin.yaml`, Edit the `reskin_config`:
+In `path/to/Franka-Teach/configs/reskin.yaml`, edit the `reskin_config`:
 
 ```yaml
 reskin_config:
